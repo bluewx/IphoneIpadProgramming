@@ -1,53 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nnc-Q6-SKu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nnc-Q6-SKu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Ingredients-->
-        <scene sceneID="FtB-ee-l7a">
-            <objects>
-                <tableViewController id="Zg1-cV-zFK" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="afm-NM-mNa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gcE-Vz-Ctt">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            <items>
-                                <barButtonItem title="Add" id="bNI-cu-ja5">
-                                    <connections>
-                                        <segue destination="LUe-D2-A7p" kind="show" id="TqI-Gx-6E9"/>
-                                    </connections>
-                                </barButtonItem>
-                            </items>
-                        </toolbar>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ly0-VP-diB">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ly0-VP-diB" id="sEv-Rx-wDn">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Zg1-cV-zFK" id="xbJ-d7-c7Q"/>
-                            <outlet property="delegate" destination="Zg1-cV-zFK" id="TJE-bf-xKB"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Ingredients" id="th0-yO-eON">
-                        <barButtonItem key="rightBarButtonItem" title="Search" id="181-V1-qD4">
-                            <connections>
-                                <segue destination="bsE-n8-krB" kind="show" id="bNc-wl-vdR"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7aS-EQ-0Pd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="566" y="632"/>
-        </scene>
         <!--Recipes-->
         <scene sceneID="KD7-Ws-QzF">
             <objects>
@@ -76,7 +32,37 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDN-X5-DJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1279" y="255"/>
+            <point key="canvasLocation" x="1395" y="284"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="TYQ-v4-LkL">
+            <objects>
+                <tableViewController id="e2A-5f-k1u" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xc1-fr-4aI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="h69-jN-K2s">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h69-jN-K2s" id="et9-Vc-rxM">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e2A-5f-k1u" id="442-Vh-jFB"/>
+                            <outlet property="delegate" destination="e2A-5f-k1u" id="PTn-RR-32R"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorites" id="9fZ-d6-SPa"/>
+                    <connections>
+                        <segue destination="cyd-65-jZO" kind="show" id="n9B-z1-si1"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGI-eq-2Dg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411" y="1067"/>
         </scene>
         <!--Nome da Receita-->
         <scene sceneID="GFj-We-t4y">
@@ -117,54 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Eg-rb-Ykk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="255"/>
-        </scene>
-        <!--Add Ingredients-->
-        <scene sceneID="P9T-gq-BH8">
-            <objects>
-                <tableViewController id="LUe-D2-A7p" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Fhu-5D-7gF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableFooterView" contentMode="redraw" id="JOe-wD-RR8">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="LUe-D2-A7p" id="kmX-OP-5Ci"/>
-                            </connections>
-                        </searchBar>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HZa-si-bfa">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HZa-si-bfa" id="9uu-94-XSK">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="LUe-D2-A7p" id="uNW-pa-s8f"/>
-                            <outlet property="delegate" destination="LUe-D2-A7p" id="Qfa-rF-gSS"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Add Ingredients" id="X3r-Xy-mgG"/>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="WHI-Hc-Hfo" id="AYo-T7-uy5"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tgD-ts-mLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="WHI-Hc-Hfo">
-                    <connections>
-                        <outlet property="delegate" destination="LUe-D2-A7p" id="how-PN-Cig"/>
-                        <outlet property="searchBar" destination="JOe-wD-RR8" id="WJz-bg-T2s"/>
-                        <outlet property="searchContentsController" destination="LUe-D2-A7p" id="n5G-4A-HrY"/>
-                        <outlet property="searchResultsDataSource" destination="LUe-D2-A7p" id="274-TW-70L"/>
-                        <outlet property="searchResultsDelegate" destination="LUe-D2-A7p" id="9dv-ow-wyW"/>
-                    </connections>
-                </searchDisplayController>
-            </objects>
-            <point key="canvasLocation" x="1279" y="1066"/>
+            <point key="canvasLocation" x="2303" y="632"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="33p-th-weK">
@@ -175,12 +114,87 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Zg1-cV-zFK" kind="relationship" relationship="rootViewController" id="V48-8l-ufU"/>
+                        <segue destination="baO-Ho-bDN" kind="show" id="Nkp-RF-urs"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecf-OF-5k9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-310" y="632"/>
         </scene>
+        <!--iCuisine-->
+        <scene sceneID="6Zz-fR-DWH">
+            <objects>
+                <viewController id="baO-Ho-bDN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P1t-o0-3uD"/>
+                        <viewControllerLayoutGuide type="bottom" id="PMl-U4-ALh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wkT-7E-e5m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fa-bl-MbF">
+                                <rect key="frame" x="144" y="179" width="313" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="q6m-u3-MU1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Ingredients:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flr-QD-Nrp">
+                                <rect key="frame" x="231" y="122" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXw-v3-RcW">
+                                <rect key="frame" x="277" y="285" width="48" height="30"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bsE-n8-krB" kind="show" identifier="results" id="gSp-MU-MAE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1e-PT-hLQ">
+                                <rect key="frame" x="248" y="373" width="105" height="30"/>
+                                <state key="normal" title="Open Favorites">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mXw-v3-RcW" firstAttribute="leading" secondItem="wkT-7E-e5m" secondAttribute="leading" constant="277" id="4Hl-fp-wPn"/>
+                            <constraint firstItem="mXw-v3-RcW" firstAttribute="centerY" secondItem="wkT-7E-e5m" secondAttribute="centerY" id="8PE-FE-axq"/>
+                            <constraint firstItem="Flr-QD-Nrp" firstAttribute="centerX" secondItem="2fa-bl-MbF" secondAttribute="centerX" id="LUu-9o-Q86"/>
+                            <constraint firstItem="Flr-QD-Nrp" firstAttribute="top" secondItem="P1t-o0-3uD" secondAttribute="bottom" constant="58" id="P55-Rt-lUq"/>
+                            <constraint firstItem="g1e-PT-hLQ" firstAttribute="top" secondItem="mXw-v3-RcW" secondAttribute="bottom" constant="58" id="il6-LA-3Dm"/>
+                            <constraint firstItem="2fa-bl-MbF" firstAttribute="centerX" secondItem="wkT-7E-e5m" secondAttribute="centerX" id="kWD-F6-oQl"/>
+                            <constraint firstItem="2fa-bl-MbF" firstAttribute="centerX" secondItem="g1e-PT-hLQ" secondAttribute="centerX" id="laB-ut-zig"/>
+                            <constraint firstItem="2fa-bl-MbF" firstAttribute="top" secondItem="Flr-QD-Nrp" secondAttribute="bottom" constant="36" id="zt3-Pt-8VN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="iCuisine" id="xsj-h6-VmS"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="VhC-N6-HX0" id="poD-rE-flU"/>
+                        <segue destination="e2A-5f-k1u" kind="show" identifier="favorites" id="tl3-4z-hxY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xad-7o-J00" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="VhC-N6-HX0">
+                    <connections>
+                        <outlet property="delegate" destination="baO-Ho-bDN" id="BTR-3u-9HW"/>
+                        <outlet property="searchContentsController" destination="baO-Ho-bDN" id="gNn-tu-9Om"/>
+                        <outlet property="searchResultsDataSource" destination="baO-Ho-bDN" id="Nmi-xs-Dde"/>
+                        <outlet property="searchResultsDelegate" destination="baO-Ho-bDN" id="xUN-gm-nJL"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="524" y="632"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sYE-4c-0zY"/>
+    </inferredMetricsTieBreakers>
 </document>
