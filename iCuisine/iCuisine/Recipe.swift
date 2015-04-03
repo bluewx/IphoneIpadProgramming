@@ -15,18 +15,12 @@ class Recipe{
     var ingredients: [NSString];
     var image: UIImage?;
     var description: NSString;
-    init(){
-        name = ""
-        ingredients = []
-        description = ""
-    }
     
     init(name: NSString, ingredients: [NSString], description: NSString, image: UIImage ){
         self.name = name
         self.ingredients = ingredients
         self.image = image
-        self.description = description
-        
+        self.description = description   
     }
     
 }

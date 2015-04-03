@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5BQ-ic-mpL">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="resultsCell" id="5BQ-ic-mpL">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5BQ-ic-mpL" id="Iz1-eg-Ren">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -114,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="baO-Ho-bDN" kind="show" id="Nkp-RF-urs"/>
+                        <segue destination="baO-Ho-bDN" kind="relationship" relationship="rootViewController" id="fYG-nD-fMm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecf-OF-5k9" userLabel="First Responder" sceneMemberID="firstResponder"/>
