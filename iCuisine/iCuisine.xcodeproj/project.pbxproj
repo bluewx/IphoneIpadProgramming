@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75020CB01ACDEE2600E0A6A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75020CAF1ACDEE2600E0A6A2 /* AppDelegate.swift */; };
+		75020CB21ACDEE2600E0A6A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75020CB11ACDEE2600E0A6A2 /* ViewController.swift */; };
+		75020CB51ACDEE2600E0A6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75020CB31ACDEE2600E0A6A2 /* Main.storyboard */; };
+		75020CB71ACDEE2600E0A6A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75020CB61ACDEE2600E0A6A2 /* Images.xcassets */; };
+		75020CBA1ACDEE2700E0A6A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75020CB81ACDEE2700E0A6A2 /* LaunchScreen.xib */; };
+		75020CC61ACDEE2700E0A6A2 /* iCuisineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75020CC51ACDEE2700E0A6A2 /* iCuisineTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75020CC01ACDEE2700E0A6A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75020CA21ACDEE2600E0A6A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75020CA91ACDEE2600E0A6A2;
+			remoteInfo = iCuisine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75020CAA1ACDEE2600E0A6A2 /* iCuisine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCuisine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75020CAE1ACDEE2600E0A6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75020CAF1ACDEE2600E0A6A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75020CB11ACDEE2600E0A6A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75020CB41ACDEE2600E0A6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75020CB61ACDEE2600E0A6A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		75020CB91ACDEE2700E0A6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		75020CBF1ACDEE2700E0A6A2 /* iCuisineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCuisineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75020CC41ACDEE2700E0A6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75020CC51ACDEE2700E0A6A2 /* iCuisineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCuisineTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75020CA71ACDEE2600E0A6A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75020CBC1ACDEE2700E0A6A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75020CA11ACDEE2600E0A6A2 = {
+			isa = PBXGroup;
+			children = (
+				75020CAC1ACDEE2600E0A6A2 /* iCuisine */,
+				75020CC21ACDEE2700E0A6A2 /* iCuisineTests */,
+				75020CAB1ACDEE2600E0A6A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75020CAB1ACDEE2600E0A6A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75020CAA1ACDEE2600E0A6A2 /* iCuisine.app */,
+				75020CBF1ACDEE2700E0A6A2 /* iCuisineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75020CAC1ACDEE2600E0A6A2 /* iCuisine */ = {
+			isa = PBXGroup;
+			children = (
+				75020CAF1ACDEE2600E0A6A2 /* AppDelegate.swift */,
+				75020CB11ACDEE2600E0A6A2 /* ViewController.swift */,
+				75020CB31ACDEE2600E0A6A2 /* Main.storyboard */,
+				75020CB61ACDEE2600E0A6A2 /* Images.xcassets */,
+				75020CB81ACDEE2700E0A6A2 /* LaunchScreen.xib */,
+				75020CAD1ACDEE2600E0A6A2 /* Supporting Files */,
+			);
+			path = iCuisine;
+			sourceTree = "<group>";
+		};
+		75020CAD1ACDEE2600E0A6A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75020CAE1ACDEE2600E0A6A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75020CC21ACDEE2700E0A6A2 /* iCuisineTests */ = {
+			isa = PBXGroup;
+			children = (
+				75020CC51ACDEE2700E0A6A2 /* iCuisineTests.swift */,
+				75020CC31ACDEE2700E0A6A2 /* Supporting Files */,
+			);
+			path = iCuisineTests;
+			sourceTree = "<group>";
+		};
+		75020CC31ACDEE2700E0A6A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75020CC41ACDEE2700E0A6A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75020CA91ACDEE2600E0A6A2 /* iCuisine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75020CC91ACDEE2700E0A6A2 /* Build configuration list for PBXNativeTarget "iCuisine" */;
+			buildPhases = (
+				75020CA61ACDEE2600E0A6A2 /* Sources */,
+				75020CA71ACDEE2600E0A6A2 /* Frameworks */,
+				75020CA81ACDEE2600E0A6A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCuisine;
+			productName = iCuisine;
+			productReference = 75020CAA1ACDEE2600E0A6A2 /* iCuisine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75020CBE1ACDEE2700E0A6A2 /* iCuisineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75020CCC1ACDEE2700E0A6A2 /* Build configuration list for PBXNativeTarget "iCuisineTests" */;
+			buildPhases = (
+				75020CBB1ACDEE2700E0A6A2 /* Sources */,
+				75020CBC1ACDEE2700E0A6A2 /* Frameworks */,
+				75020CBD1ACDEE2700E0A6A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75020CC11ACDEE2700E0A6A2 /* PBXTargetDependency */,
+			);
+			name = iCuisineTests;
+			productName = iCuisineTests;
+			productReference = 75020CBF1ACDEE2700E0A6A2 /* iCuisineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75020CA21ACDEE2600E0A6A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Golden Avocado Labs";
+				TargetAttributes = {
+					75020CA91ACDEE2600E0A6A2 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					75020CBE1ACDEE2700E0A6A2 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 75020CA91ACDEE2600E0A6A2;
+					};
+				};
+			};
+			buildConfigurationList = 75020CA51ACDEE2600E0A6A2 /* Build configuration list for PBXProject "iCuisine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75020CA11ACDEE2600E0A6A2;
+			productRefGroup = 75020CAB1ACDEE2600E0A6A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75020CA91ACDEE2600E0A6A2 /* iCuisine */,
+				75020CBE1ACDEE2700E0A6A2 /* iCuisineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75020CA81ACDEE2600E0A6A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75020CB51ACDEE2600E0A6A2 /* Main.storyboard in Resources */,
+				75020CBA1ACDEE2700E0A6A2 /* LaunchScreen.xib in Resources */,
+				75020CB71ACDEE2600E0A6A2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75020CBD1ACDEE2700E0A6A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75020CA61ACDEE2600E0A6A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75020CB21ACDEE2600E0A6A2 /* ViewController.swift in Sources */,
+				75020CB01ACDEE2600E0A6A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75020CBB1ACDEE2700E0A6A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75020CC61ACDEE2700E0A6A2 /* iCuisineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75020CC11ACDEE2700E0A6A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75020CA91ACDEE2600E0A6A2 /* iCuisine */;
+			targetProxy = 75020CC01ACDEE2700E0A6A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75020CB31ACDEE2600E0A6A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75020CB41ACDEE2600E0A6A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75020CB81ACDEE2700E0A6A2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75020CB91ACDEE2700E0A6A2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75020CC71ACDEE2700E0A6A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75020CC81ACDEE2700E0A6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75020CCA1ACDEE2700E0A6A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iCuisine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		75020CCB1ACDEE2700E0A6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iCuisine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		75020CCD1ACDEE2700E0A6A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iCuisineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCuisine.app/iCuisine";
+			};
+			name = Debug;
+		};
+		75020CCE1ACDEE2700E0A6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iCuisineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCuisine.app/iCuisine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75020CA51ACDEE2600E0A6A2 /* Build configuration list for PBXProject "iCuisine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75020CC71ACDEE2700E0A6A2 /* Debug */,
+				75020CC81ACDEE2700E0A6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75020CC91ACDEE2700E0A6A2 /* Build configuration list for PBXNativeTarget "iCuisine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75020CCA1ACDEE2700E0A6A2 /* Debug */,
+				75020CCB1ACDEE2700E0A6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75020CCC1ACDEE2700E0A6A2 /* Build configuration list for PBXNativeTarget "iCuisineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75020CCD1ACDEE2700E0A6A2 /* Debug */,
+				75020CCE1ACDEE2700E0A6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75020CA21ACDEE2600E0A6A2 /* Project object */;
+}
