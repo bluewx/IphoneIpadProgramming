@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "75020C7B1ACDE45100E0A6A2"
+               BlueprintIdentifier = "75020CA91ACDEE2600E0A6A2"
                BuildableName = "iCuisine.app"
                BlueprintName = "iCuisine"
                ReferencedContainer = "container:iCuisine.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "75020C901ACDE45100E0A6A2"
+               BlueprintIdentifier = "75020CBE1ACDEE2700E0A6A2"
                BuildableName = "iCuisineTests.xctest"
                BlueprintName = "iCuisineTests"
                ReferencedContainer = "container:iCuisine.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "75020C901ACDE45100E0A6A2"
+               BlueprintIdentifier = "75020CBE1ACDEE2700E0A6A2"
                BuildableName = "iCuisineTests.xctest"
                BlueprintName = "iCuisineTests"
                ReferencedContainer = "container:iCuisine.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "75020C7B1ACDE45100E0A6A2"
+            BlueprintIdentifier = "75020CA91ACDEE2600E0A6A2"
             BuildableName = "iCuisine.app"
             BlueprintName = "iCuisine"
             ReferencedContainer = "container:iCuisine.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "75020C7B1ACDE45100E0A6A2"
+            BlueprintIdentifier = "75020CA91ACDEE2600E0A6A2"
             BuildableName = "iCuisine.app"
             BlueprintName = "iCuisine"
             ReferencedContainer = "container:iCuisine.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "75020C7B1ACDE45100E0A6A2"
+            BlueprintIdentifier = "75020CA91ACDEE2600E0A6A2"
             BuildableName = "iCuisine.app"
             BlueprintName = "iCuisine"
             ReferencedContainer = "container:iCuisine.xcodeproj">

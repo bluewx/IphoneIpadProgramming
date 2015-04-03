@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		75020CB01ACDEE2600E0A6A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75020CAF1ACDEE2600E0A6A2 /* AppDelegate.swift */; };
 		75020CB21ACDEE2600E0A6A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75020CB11ACDEE2600E0A6A2 /* ViewController.swift */; };
-		75020CB51ACDEE2600E0A6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75020CB31ACDEE2600E0A6A2 /* Main.storyboard */; };
 		75020CB71ACDEE2600E0A6A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75020CB61ACDEE2600E0A6A2 /* Images.xcassets */; };
 		75020CBA1ACDEE2700E0A6A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75020CB81ACDEE2700E0A6A2 /* LaunchScreen.xib */; };
 		75020CC61ACDEE2700E0A6A2 /* iCuisineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75020CC51ACDEE2700E0A6A2 /* iCuisineTests.swift */; };
+		75020CD01ACDEE6000E0A6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75020CCF1ACDEE6000E0A6A2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,12 @@
 		75020CAE1ACDEE2600E0A6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75020CAF1ACDEE2600E0A6A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75020CB11ACDEE2600E0A6A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		75020CB41ACDEE2600E0A6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75020CB61ACDEE2600E0A6A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		75020CB91ACDEE2700E0A6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		75020CBF1ACDEE2700E0A6A2 /* iCuisineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCuisineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75020CC41ACDEE2700E0A6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75020CC51ACDEE2700E0A6A2 /* iCuisineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCuisineTests.swift; sourceTree = "<group>"; };
+		75020CCF1ACDEE6000E0A6A2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			children = (
 				75020CAF1ACDEE2600E0A6A2 /* AppDelegate.swift */,
 				75020CB11ACDEE2600E0A6A2 /* ViewController.swift */,
-				75020CB31ACDEE2600E0A6A2 /* Main.storyboard */,
+				75020CCF1ACDEE6000E0A6A2 /* Main.storyboard */,
 				75020CB61ACDEE2600E0A6A2 /* Images.xcassets */,
 				75020CB81ACDEE2700E0A6A2 /* LaunchScreen.xib */,
 				75020CAD1ACDEE2600E0A6A2 /* Supporting Files */,
@@ -192,7 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75020CB51ACDEE2600E0A6A2 /* Main.storyboard in Resources */,
+				75020CD01ACDEE6000E0A6A2 /* Main.storyboard in Resources */,
 				75020CBA1ACDEE2700E0A6A2 /* LaunchScreen.xib in Resources */,
 				75020CB71ACDEE2600E0A6A2 /* Images.xcassets in Resources */,
 			);
@@ -236,14 +236,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		75020CB31ACDEE2600E0A6A2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75020CB41ACDEE2600E0A6A2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		75020CB81ACDEE2700E0A6A2 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

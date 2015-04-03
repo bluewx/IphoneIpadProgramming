@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:iCousine.xcodeproj">
+      location = "self:iCuisine.xcodeproj">
    </FileRef>
 </Workspace>

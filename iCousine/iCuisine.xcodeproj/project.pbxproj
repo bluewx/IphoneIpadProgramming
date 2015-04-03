@@ -12,7 +12,7 @@
 		75020C871ACDE45100E0A6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75020C851ACDE45100E0A6A2 /* Main.storyboard */; };
 		75020C891ACDE45100E0A6A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75020C881ACDE45100E0A6A2 /* Images.xcassets */; };
 		75020C8C1ACDE45100E0A6A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75020C8A1ACDE45100E0A6A2 /* LaunchScreen.xib */; };
-		75020C981ACDE45100E0A6A2 /* iCousineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75020C971ACDE45100E0A6A2 /* iCousineTests.swift */; };
+		75020C981ACDE45100E0A6A2 /* iCuisineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75020C971ACDE45100E0A6A2 /* iCuisineTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +26,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		75020C7C1ACDE45100E0A6A2 /* iCousine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCousine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75020C7C1ACDE45100E0A6A2 /* iCuisine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCuisine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75020C801ACDE45100E0A6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75020C811ACDE45100E0A6A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75020C831ACDE45100E0A6A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75020C861ACDE45100E0A6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75020C881ACDE45100E0A6A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		75020C8B1ACDE45100E0A6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		75020C911ACDE45100E0A6A2 /* iCousineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCousineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75020C911ACDE45100E0A6A2 /* iCuisineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCuisineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75020C961ACDE45100E0A6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75020C971ACDE45100E0A6A2 /* iCousineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCousineTests.swift; sourceTree = "<group>"; };
+		75020C971ACDE45100E0A6A2 /* iCuisineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCuisineTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 		75020C731ACDE45100E0A6A2 = {
 			isa = PBXGroup;
 			children = (
-				75020C7E1ACDE45100E0A6A2 /* iCousine */,
-				75020C941ACDE45100E0A6A2 /* iCousineTests */,
+				75020C7E1ACDE45100E0A6A2 /* iCuisine */,
+				75020C941ACDE45100E0A6A2 /* iCuisineTests */,
 				75020C7D1ACDE45100E0A6A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,13 +68,13 @@
 		75020C7D1ACDE45100E0A6A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75020C7C1ACDE45100E0A6A2 /* iCousine.app */,
-				75020C911ACDE45100E0A6A2 /* iCousineTests.xctest */,
+				75020C7C1ACDE45100E0A6A2 /* iCuisine.app */,
+				75020C911ACDE45100E0A6A2 /* iCuisineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		75020C7E1ACDE45100E0A6A2 /* iCousine */ = {
+		75020C7E1ACDE45100E0A6A2 /* iCuisine */ = {
 			isa = PBXGroup;
 			children = (
 				75020C811ACDE45100E0A6A2 /* AppDelegate.swift */,
@@ -84,6 +84,7 @@
 				75020C8A1ACDE45100E0A6A2 /* LaunchScreen.xib */,
 				75020C7F1ACDE45100E0A6A2 /* Supporting Files */,
 			);
+			name = iCuisine;
 			path = iCousine;
 			sourceTree = "<group>";
 		};
@@ -95,12 +96,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		75020C941ACDE45100E0A6A2 /* iCousineTests */ = {
+		75020C941ACDE45100E0A6A2 /* iCuisineTests */ = {
 			isa = PBXGroup;
 			children = (
-				75020C971ACDE45100E0A6A2 /* iCousineTests.swift */,
+				75020C971ACDE45100E0A6A2 /* iCuisineTests.swift */,
 				75020C951ACDE45100E0A6A2 /* Supporting Files */,
 			);
+			name = iCuisineTests;
 			path = iCousineTests;
 			sourceTree = "<group>";
 		};
@@ -115,9 +117,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		75020C7B1ACDE45100E0A6A2 /* iCousine */ = {
+		75020C7B1ACDE45100E0A6A2 /* iCuisine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75020C9B1ACDE45100E0A6A2 /* Build configuration list for PBXNativeTarget "iCousine" */;
+			buildConfigurationList = 75020C9B1ACDE45100E0A6A2 /* Build configuration list for PBXNativeTarget "iCuisine" */;
 			buildPhases = (
 				75020C781ACDE45100E0A6A2 /* Sources */,
 				75020C791ACDE45100E0A6A2 /* Frameworks */,
@@ -127,14 +129,14 @@
 			);
 			dependencies = (
 			);
-			name = iCousine;
+			name = iCuisine;
 			productName = iCousine;
-			productReference = 75020C7C1ACDE45100E0A6A2 /* iCousine.app */;
+			productReference = 75020C7C1ACDE45100E0A6A2 /* iCuisine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		75020C901ACDE45100E0A6A2 /* iCousineTests */ = {
+		75020C901ACDE45100E0A6A2 /* iCuisineTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75020C9E1ACDE45100E0A6A2 /* Build configuration list for PBXNativeTarget "iCousineTests" */;
+			buildConfigurationList = 75020C9E1ACDE45100E0A6A2 /* Build configuration list for PBXNativeTarget "iCuisineTests" */;
 			buildPhases = (
 				75020C8D1ACDE45100E0A6A2 /* Sources */,
 				75020C8E1ACDE45100E0A6A2 /* Frameworks */,
@@ -145,9 +147,9 @@
 			dependencies = (
 				75020C931ACDE45100E0A6A2 /* PBXTargetDependency */,
 			);
-			name = iCousineTests;
+			name = iCuisineTests;
 			productName = iCousineTests;
-			productReference = 75020C911ACDE45100E0A6A2 /* iCousineTests.xctest */;
+			productReference = 75020C911ACDE45100E0A6A2 /* iCuisineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 75020C771ACDE45100E0A6A2 /* Build configuration list for PBXProject "iCousine" */;
+			buildConfigurationList = 75020C771ACDE45100E0A6A2 /* Build configuration list for PBXProject "iCuisine" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +183,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				75020C7B1ACDE45100E0A6A2 /* iCousine */,
-				75020C901ACDE45100E0A6A2 /* iCousineTests */,
+				75020C7B1ACDE45100E0A6A2 /* iCuisine */,
+				75020C901ACDE45100E0A6A2 /* iCuisineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75020C981ACDE45100E0A6A2 /* iCousineTests.swift in Sources */,
+				75020C981ACDE45100E0A6A2 /* iCuisineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +232,7 @@
 /* Begin PBXTargetDependency section */
 		75020C931ACDE45100E0A6A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 75020C7B1ACDE45100E0A6A2 /* iCousine */;
+			target = 75020C7B1ACDE45100E0A6A2 /* iCuisine */;
 			targetProxy = 75020C921ACDE45100E0A6A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -340,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iCousine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iCuisine;
 			};
 			name = Debug;
 		};
@@ -350,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iCousine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iCuisine;
 			};
 			name = Release;
 		};
@@ -368,7 +370,7 @@
 				);
 				INFOPLIST_FILE = iCousineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iCuisineTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCousine.app/iCousine";
 			};
 			name = Debug;
@@ -383,7 +385,7 @@
 				);
 				INFOPLIST_FILE = iCousineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iCuisineTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCousine.app/iCousine";
 			};
 			name = Release;
@@ -391,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		75020C771ACDE45100E0A6A2 /* Build configuration list for PBXProject "iCousine" */ = {
+		75020C771ACDE45100E0A6A2 /* Build configuration list for PBXProject "iCuisine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75020C991ACDE45100E0A6A2 /* Debug */,
@@ -400,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75020C9B1ACDE45100E0A6A2 /* Build configuration list for PBXNativeTarget "iCousine" */ = {
+		75020C9B1ACDE45100E0A6A2 /* Build configuration list for PBXNativeTarget "iCuisine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75020C9C1ACDE45100E0A6A2 /* Debug */,
@@ -408,7 +410,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		75020C9E1ACDE45100E0A6A2 /* Build configuration list for PBXNativeTarget "iCousineTests" */ = {
+		75020C9E1ACDE45100E0A6A2 /* Build configuration list for PBXNativeTarget "iCuisineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75020C9F1ACDE45100E0A6A2 /* Debug */,
