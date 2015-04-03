@@ -399,6 +399,7 @@
 				75020CCB1ACDEE2700E0A6A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75020CCC1ACDEE2700E0A6A2 /* Build configuration list for PBXNativeTarget "iCuisineTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +408,7 @@
 				75020CCE1ACDEE2700E0A6A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
