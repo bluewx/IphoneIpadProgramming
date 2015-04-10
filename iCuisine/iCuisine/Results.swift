@@ -11,7 +11,7 @@ import UIKit
 
 class Results: UITableViewController {
     
-    var recipes: Recipe!
+    var recipes: [Recipe] = []
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -35,23 +35,24 @@ class Results: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1;
+        return self.recipes.count;
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        println("ERRO ANTES DAQUI")
-        var cell = tableView.dequeueReusableCellWithIdentifier("resultsCell") as UITableViewCell
         
-        cell.textLabel!.text = self.recipes.name
+        var cell = tableView.dequeueReusableCellWithIdentifier("resultsCell") as! MyTableViewCell
+        
+        cell.nameLabel.text = recipes[indexPath.row].name
+        
         return cell;
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetails" {
-//            var venueViewController = segue.destinationViewController as Results
-//            var index = self.tableView.indexPathForSelectedRow()!
-//            var venue = self.venues[index.row]
-//            venueViewController.venueInformation = venue
+        if segue.identifier == "showRecipe" {
+            var venueViewController = segue.destinationViewController as! RecipeViewController
+            var index = self.tableView.indexPathForSelectedRow()!
+            var venue = self.recipes[index.row]
+            venueViewController.recipe = venue
         }
     }
 }

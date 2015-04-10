@@ -11,12 +11,13 @@ import UIKit
 
 class Recipe{
     
-    var name: NSString;
-    var ingredients: [NSString];
+    var name: String;
+    var ingredients: [String];
     var image: UIImage?;
-    var description: NSString;
+    var description: String;
+    @IBOutlet weak var button: UIButton!
     
-    init(name: NSString, ingredients: [NSString], description: NSString, image: UIImage ){
+    init(name: String, ingredients: [String], description: String, image: UIImage ){
         self.name = name
         self.ingredients = ingredients
         self.image = image

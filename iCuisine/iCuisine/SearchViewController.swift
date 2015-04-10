@@ -12,14 +12,10 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    
+    }    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -27,11 +23,12 @@ class SearchViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "results" {
-//            var venueViewController =  segue.destinationViewController as Results
-//            var venue = Recipe(name: "Caralho", ingredients: ["Bolas, Saco escrotal"], description: "Usado parar mijar", image: UIImage())
-//            venueViewController.recipes = venue
+            var venueViewController =  segue.destinationViewController as! Results
+            var venue: [Recipe] = []
+            venue.append(Recipe(name: "Cheese Bread", ingredients: ["Cheese, Bread"], description: "Cheese bread", image: UIImage(named: "cheeseBread.jpg")!))
+            venue.append(Recipe(name: "Bread", ingredients: ["Flour, Water"], description: "Commom bread", image: UIImage(named: "bread.jpeg")!))
+            venueViewController.recipes = venue
         }
     }
     
-
 }
