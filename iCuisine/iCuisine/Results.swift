@@ -11,14 +11,14 @@ import UIKit
 
 class Results: UITableViewController {
     
-    var recipes = [Recipe]()
+    var recipes: Recipe!
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        
-        recipes.append(Recipe(name: "Recipe 1", ingredients: ["banana","strawberry","potato","rice"], description: "Best recipe ever",image: UIImage()))
-        
-        recipes.append(Recipe(name: "Recipe 2", ingredients: ["beans","rice","potato","beef"], description: "Best recipe ever",image: UIImage()))
+//        
+//        recipes.append(Recipe(name: "Recipe 1", ingredients: ["banana","strawberry","potato","rice"], description: "Best recipe ever",image: UIImage()))
+//        
+//        recipes.append(Recipe(name: "Recipe 2", ingredients: ["beans","rice","potato","beef"], description: "Best recipe ever",image: UIImage()))
         
     }
     
@@ -35,21 +35,23 @@ class Results: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.recipes.count;
+        return 1;
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        println("ERRO ANTES DAQUI")
         var cell = tableView.dequeueReusableCellWithIdentifier("resultsCell") as UITableViewCell
-        cell.textLabel!.text = self.recipes[indexPath.row].name
+        
+        cell.textLabel!.text = self.recipes.name
         return cell;
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "showDetails" {
-//            var venueViewController = segue.destinationViewController as DiningVenueViewController
+        if segue.identifier == "showDetails" {
+//            var venueViewController = segue.destinationViewController as Results
 //            var index = self.tableView.indexPathForSelectedRow()!
 //            var venue = self.venues[index.row]
 //            venueViewController.venueInformation = venue
-//        }
+        }
     }
 }

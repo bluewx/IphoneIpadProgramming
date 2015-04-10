@@ -15,6 +15,7 @@
 		75020CD01ACDEE6000E0A6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75020CCF1ACDEE6000E0A6A2 /* Main.storyboard */; };
 		97DD94A71ACF296E00B68343 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DD94A61ACF296E00B68343 /* Recipe.swift */; };
 		97DD94A91ACF30C000B68343 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DD94A81ACF30C000B68343 /* Results.swift */; };
+		C836640A1ACF922F00822BB4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83664091ACF922F00822BB4 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		75020CCF1ACDEE6000E0A6A2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		97DD94A61ACF296E00B68343 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		97DD94A81ACF30C000B68343 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		C83664091ACF922F00822BB4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				97DD94A81ACF30C000B68343 /* Results.swift */,
 				75020CB11ACDEE2600E0A6A2 /* ViewController.swift */,
 				75020CCF1ACDEE6000E0A6A2 /* Main.storyboard */,
+				C83664091ACF922F00822BB4 /* SearchViewController.swift */,
 				97DD94A61ACF296E00B68343 /* Recipe.swift */,
 				75020CB61ACDEE2600E0A6A2 /* Images.xcassets */,
 				75020CB81ACDEE2700E0A6A2 /* LaunchScreen.xib */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C836640A1ACF922F00822BB4 /* SearchViewController.swift in Sources */,
 				75020CB21ACDEE2600E0A6A2 /* ViewController.swift in Sources */,
 				97DD94A71ACF296E00B68343 /* Recipe.swift in Sources */,
 				97DD94A91ACF30C000B68343 /* Results.swift in Sources */,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nnc-Q6-SKu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nnc-Q6-SKu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Recipes-->
@@ -124,7 +124,7 @@
         <!--iCuisine-->
         <scene sceneID="6Zz-fR-DWH">
             <objects>
-                <viewController id="baO-Ho-bDN" sceneMemberID="viewController">
+                <viewController id="baO-Ho-bDN" customClass="SearchViewController" customModule="iCuisine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P1t-o0-3uD"/>
                         <viewControllerLayoutGuide type="bottom" id="PMl-U4-ALh"/>
@@ -161,6 +161,9 @@
                                 <state key="normal" title="Open Favorites">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="e2A-5f-k1u" kind="show" identifier="favorites" id="O3c-ek-6ZC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -178,7 +181,6 @@
                     <navigationItem key="navigationItem" title="iCuisine" id="xsj-h6-VmS"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="VhC-N6-HX0" id="poD-rE-flU"/>
-                        <segue destination="e2A-5f-k1u" kind="show" identifier="favorites" id="tl3-4z-hxY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xad-7o-J00" userLabel="First Responder" sceneMemberID="firstResponder"/>
