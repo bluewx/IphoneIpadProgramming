@@ -18,6 +18,7 @@ import UIKit
 class SearchViewController: UIViewController {
     
 //    var favoriteRecipes: [Recipe] = []
+    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,15 +31,16 @@ class SearchViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "results" {
-            var venueViewController =  segue.destinationViewController as! Results
-            var venue : [Recipe] = []
-            //TODO adicionar referencias de pesquisa do database escolhido
-            venue.append(Recipe(name: "Cheese Bread", ingredients: ["Cheese, Bread"], description: "Cheese bread", image:"cheeseBread.jpg"))
-            venue.append(Recipe(name: "Bread", ingredients: ["Flour, Water"], description: "Commom bread", image:"bread.jpeg"))
             
-            venueViewController.recipes = venue
-//            venueViewController.favoriteRecipes = self.favoriteRecipes
-//            venueViewController.favoriteRecipes = Static.Favorites.favoritesArray
+            var venueViewController =  segue.destinationViewController as! Results
+            
+            let urlString = "http://api.pearson.com:80/kitchen-manager/v1/recipes?ingredients-all="
+            
+            var userInput = textField.text
+            
+            // DAR SPLIT EM COMMAS E ADD NO urlString
+            
+            venueViewController.urlPath = urlString
         }
         
         if segue.identifier == "favorites" {

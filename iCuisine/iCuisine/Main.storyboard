@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nnc-Q6-SKu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nnc-Q6-SKu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -49,6 +49,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Recipes" id="L9z-wC-ez4"/>
+                    <connections>
+                        <outlet property="myTableView" destination="Kpe-6o-g4o" id="iOP-ie-e5X"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDN-X5-DJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,6 +158,7 @@
                     <connections>
                         <outlet property="recipeDescription" destination="3W4-Mc-gB4" id="HVu-0A-T5i"/>
                         <outlet property="recipeImage" destination="29i-sU-OAT" id="6VW-eT-JTR"/>
+                        <outlet property="recipeIngredients" destination="zAq-GQ-q8C" id="Rbg-rs-M1t"/>
                         <outlet property="recipeName" destination="pcf-a4-yQ7" id="Bnt-AI-yJb"/>
                     </connections>
                 </viewController>
@@ -238,6 +242,7 @@
                     <navigationItem key="navigationItem" title="iCuisine" id="xsj-h6-VmS"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="VhC-N6-HX0" id="poD-rE-flU"/>
+                        <outlet property="textField" destination="2fa-bl-MbF" id="CB4-LV-lKj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xad-7o-J00" userLabel="First Responder" sceneMemberID="firstResponder"/>

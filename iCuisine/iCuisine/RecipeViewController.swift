@@ -15,7 +15,7 @@ class RecipeViewController: UIViewController {
     
     @IBOutlet weak var recipeImage: UIImageView!
     
-    @IBOutlet weak var repiceIngredients: UITextView!
+    @IBOutlet weak var recipeIngredients: UITextView!
     
     @IBOutlet weak var recipeDescription: UITextView!
     
@@ -27,6 +27,12 @@ class RecipeViewController: UIViewController {
             recipeName.title = recipe.name
             recipeImage.image = UIImage(named: recipe.image)
             recipeDescription.text = recipe.recipeDescription
+            var ing: String = "Ingredients: \n\n"
+            for s in recipe.ingredients {
+                ing += "\t" + s + "\n"
+            }
+            recipeIngredients.text = ing
+            
         }
     }
     

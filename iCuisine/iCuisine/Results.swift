@@ -11,11 +11,45 @@ import UIKit
 
 class Results: UITableViewController {
     
+    var urlPath: String = ""
     var recipes: [Recipe] = []
-//    var favoriteRecipes: [Recipe] = []
+    
+    @IBOutlet var myTableView: UITableView!
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        
+        let url = NSURL(string: urlPath)
+        
+        let request = NSURLRequest(URL: url!)
+        
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.currentQueue()) { response, maybeData, error in
+            if let data = maybeData {
+                //
+                let json = JSON(data: data)
+                
+                var count = json["count"].intValue
+                
+                
+                
+                for index in 0..<count{
+                    var ing: [String] = []
+                    
+                    for s in json["results"][index]["ingredients"].arrayValue{
+                        ing.append(s.stringValue)
+                    }
+                    
+                    // PEGAR A DESCRICAO DO SITE POR OUTRA HTTP REQUEST, MAS SINCRONO DESSA VEZ!
+                    self.recipes.append(Recipe(name:json["results"][index]["name"].stringValue, ingredients: ing, description: "", image:""))
+                }
+            } else {
+                println(error.localizedDescription)
+            }
+            self.myTableView.reloadData()
+        }
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
