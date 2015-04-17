@@ -25,8 +25,8 @@ class RecipeViewController: UIViewController {
         super.viewDidLoad()
         if recipe != nil {
             recipeName.title = recipe.name
-            recipeImage.image = recipe.image
-            recipeDescription.text = recipe.description
+            recipeImage.image = UIImage(named: recipe.image)
+            recipeDescription.text = recipe.recipeDescription
         }
     }
     

@@ -20,6 +20,7 @@
 		C86EDAC51AD869A70075C00C /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86EDAC41AD869A70075C00C /* MyTableViewCell.swift */; };
 		C86EDAC71AD86DDA0075C00C /* cheeseBread.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C86EDAC61AD86DDA0075C00C /* cheeseBread.jpg */; };
 		C86EDAC91AD86DEC0075C00C /* bread.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C86EDAC81AD86DEC0075C00C /* bread.jpeg */; };
+		C884A1151AD9C30B0025ED00 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884A1141AD9C30B0025ED00 /* FavoritesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		C86EDAC41AD869A70075C00C /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		C86EDAC61AD86DDA0075C00C /* cheeseBread.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cheeseBread.jpg; sourceTree = "<group>"; };
 		C86EDAC81AD86DEC0075C00C /* bread.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bread.jpeg; sourceTree = "<group>"; };
+		C884A1141AD9C30B0025ED00 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,16 +93,17 @@
 		75020CAC1ACDEE2600E0A6A2 /* iCuisine */ = {
 			isa = PBXGroup;
 			children = (
-				75020CAF1ACDEE2600E0A6A2 /* AppDelegate.swift */,
 				97DD94A81ACF30C000B68343 /* Results.swift */,
+				97DD94A61ACF296E00B68343 /* Recipe.swift */,
+				C86EDAC41AD869A70075C00C /* MyTableViewCell.swift */,
 				C86EDAC81AD86DEC0075C00C /* bread.jpeg */,
 				C86EDAC61AD86DDA0075C00C /* cheeseBread.jpg */,
-				75020CB11ACDEE2600E0A6A2 /* ViewController.swift */,
 				C86EDAC21AD85EEE0075C00C /* Main.storyboard */,
-				C86EDAC41AD869A70075C00C /* MyTableViewCell.swift */,
+				75020CB11ACDEE2600E0A6A2 /* ViewController.swift */,
+				C884A1141AD9C30B0025ED00 /* FavoritesViewController.swift */,
 				C86EDAC01AD85A320075C00C /* RecipeViewController.swift */,
 				C83664091ACF922F00822BB4 /* SearchViewController.swift */,
-				97DD94A61ACF296E00B68343 /* Recipe.swift */,
+				75020CAF1ACDEE2600E0A6A2 /* AppDelegate.swift */,
 				75020CB61ACDEE2600E0A6A2 /* Images.xcassets */,
 				75020CB81ACDEE2700E0A6A2 /* LaunchScreen.xib */,
 				75020CAD1ACDEE2600E0A6A2 /* Supporting Files */,
@@ -237,6 +240,7 @@
 			files = (
 				C86EDAC51AD869A70075C00C /* MyTableViewCell.swift in Sources */,
 				C836640A1ACF922F00822BB4 /* SearchViewController.swift in Sources */,
+				C884A1151AD9C30B0025ED00 /* FavoritesViewController.swift in Sources */,
 				75020CB21ACDEE2600E0A6A2 /* ViewController.swift in Sources */,
 				C86EDAC11AD85A320075C00C /* RecipeViewController.swift in Sources */,
 				97DD94A71ACF296E00B68343 /* Recipe.swift in Sources */,

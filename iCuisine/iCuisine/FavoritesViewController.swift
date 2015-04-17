@@ -1,21 +1,31 @@
 //
-//  Results.swift
+//  FavoritesViewController.swift
 //  iCuisine
 //
-//  Created by William Dalmorra De Souza on 4/3/15.
+//  Created by Raphael Andrade on 4/11/15.
 //  Copyright (c) 2015 Golden Avocado Labs. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class Results: UITableViewController {
+class FavoritesViewController: UITableViewController {
     
     var recipes: [Recipe] = []
 //    var favoriteRecipes: [Recipe] = []
     
     override func viewDidLoad(){
         super.viewDidLoad()
+
+        let favoritesDefaults = NSUserDefaults.standardUserDefaults()
+        
+        if let data = favoritesDefaults.objectForKey("recipe") as? NSData {
+            let unarc = NSKeyedUnarchiver(forReadingWithData: data)
+            let newR = unarc.decodeObjectForKey("root") as! [Recipe]
+            
+            recipes = newR
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,14 +46,10 @@ class Results: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("resultsCell") as! MyTableViewCell
-        
+        var cell = tableView.dequeueReusableCellWithIdentifier("favoritesCell") as! MyTableViewCell
         cell.nameLabel.text = recipes[indexPath.row].name
 //        cell.favoriteRecipes = favoriteRecipes
         cell.recipe = recipes[indexPath.row]
-        if cell.recipe.isFav == true {
-            cell.addFav.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        }
         
         return cell;
     }

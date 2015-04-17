@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var re : Recipe!
     
     override func viewDidLoad() {
         super.viewDidLoad()
