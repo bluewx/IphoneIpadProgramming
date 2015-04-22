@@ -12,11 +12,8 @@ import UIKit
 class RecipeViewController: UIViewController {
     
     @IBOutlet weak var recipeName: UINavigationItem!
-    
     @IBOutlet weak var recipeImage: UIImageView!
-    
     @IBOutlet weak var recipeIngredients: UITextView!
-    
     @IBOutlet weak var recipeDescription: UITextView!
     
     var recipe: Recipe!

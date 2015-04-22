@@ -69,22 +69,31 @@ class Results: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("resultsCell") as MyTableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("resultsCell") as! MyTableViewCell
         
         cell.nameLabel.text = recipes[indexPath.row].name
         cell.recipe = recipes[indexPath.row]
+        cell.recipe.isFav = false
+        
+        for index in 0..<Static.Favorites.favoritesArray.count {
+            if (cell.recipe.equals(Static.Favorites.favoritesArray[index]) ) {
+                cell.recipe.isFav = true
+                break
+            }
+        }
+        
         if cell.recipe.isFav == true {
-            cell.addFav.setBackgroundImage(UIImage(named: "Red-heart.png"), forState: .Normal)
+            cell.addFav.setBackgroundImage(UIImage(named: "red-heart.png"), forState: .Normal)
         }
         else {
-            cell.addFav.setBackgroundImage(UIImage(named: "white-heart.jpeg"), forState: .Normal)
+            cell.addFav.setBackgroundImage(UIImage(named: "white-heart.png"), forState: .Normal)
         }
         return cell;
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showRecipe" {
-            var venueViewController = segue.destinationViewController as RecipeViewController
+            var venueViewController = segue.destinationViewController as! RecipeViewController
             var index = self.tableView.indexPathForSelectedRow()!
             var venue = self.recipes[index.row]
             venueViewController.recipe = venue

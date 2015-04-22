@@ -36,17 +36,16 @@ class MyTableViewCell: UITableViewCell {
             println("INSERINDO FAV")
             let favoritesDefaults = NSUserDefaults.standardUserDefaults()
             recipe.isFav = true
-            addFav.setBackgroundImage(UIImage(named: "Red-heart.png"), forState: .Normal)
+            addFav.setBackgroundImage(UIImage(named: "red-heart.png"), forState: .Normal)
             
             Static.Favorites.favoritesArray.append(recipe)
         
             favoritesDefaults.setObject(NSKeyedArchiver.archivedDataWithRootObject(Static.Favorites.favoritesArray), forKey: "recipe")
-        }
-        else {
+        } else {
             println("TIRANDO FAV")
             let favoritesDefaults = NSUserDefaults.standardUserDefaults()
             recipe.isFav = false
-            addFav.setBackgroundImage(UIImage(named: "white-heart.jpeg"), forState: .Normal)
+            addFav.setBackgroundImage(UIImage(named: "white-heart.png"), forState: .Normal)
             
             Static.Favorites.favoritesArray.removeAtIndex(findIndexOfRecipe(self.recipe))
             

@@ -17,14 +17,7 @@ class FavoritesViewController: UITableViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
 
-        let favoritesDefaults = NSUserDefaults.standardUserDefaults()
-        
-        if let data = favoritesDefaults.objectForKey("recipe") as? NSData {
-            let unarc = NSKeyedUnarchiver(forReadingWithData: data)
-            let newR = unarc.decodeObjectForKey("root") as [Recipe]
-            
-            recipes = newR
-        }
+        recipes = Static.Favorites.favoritesArray
         
     }
     
@@ -45,16 +38,17 @@ class FavoritesViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        var cell = tableView.dequeueReusableCellWithIdentifier("favoritesCell") as MyTableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("favoritesCell") as! MyTableViewCell
+ 
         cell.nameLabel.text = recipes[indexPath.row].name
         cell.recipe = recipes[indexPath.row]
-        
+
+
         if cell.recipe.isFav == true {
-            cell.addFav.setBackgroundImage(UIImage(named: "Red-heart.png"), forState: .Normal)
+            cell.addFav.setBackgroundImage(UIImage(named: "red-heart.png"), forState: .Normal)
         }
         else {
-            cell.addFav.setBackgroundImage(UIImage(named: "white-heart.jpeg"), forState: .Normal)
+            cell.addFav.setBackgroundImage(UIImage(named: "white-heart.png"), forState: .Normal)
         }
 
         return cell;
@@ -62,7 +56,7 @@ class FavoritesViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showRecipe" {
-            var venueViewController = segue.destinationViewController as RecipeViewController
+            var venueViewController = segue.destinationViewController as! RecipeViewController
             var index = self.tableView.indexPathForSelectedRow()!
             var venue = self.recipes[index.row]
             venueViewController.recipe = venue

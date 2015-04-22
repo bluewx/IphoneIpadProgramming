@@ -15,12 +15,12 @@
 		75F42A2B1AE1A29E005E3BAB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F42A2A1AE1A29E005E3BAB /* SwiftyJSON.swift */; };
 		97DD94A71ACF296E00B68343 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DD94A61ACF296E00B68343 /* Recipe.swift */; };
 		97DD94A91ACF30C000B68343 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DD94A81ACF30C000B68343 /* Results.swift */; };
+		C813F0381AE856C700F5E23D /* red-heart.png in Resources */ = {isa = PBXBuildFile; fileRef = C813F0361AE856C700F5E23D /* red-heart.png */; };
+		C813F03B1AE857C900F5E23D /* white-heart.png in Resources */ = {isa = PBXBuildFile; fileRef = C813F03A1AE857C900F5E23D /* white-heart.png */; };
 		C836640A1ACF922F00822BB4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83664091ACF922F00822BB4 /* SearchViewController.swift */; };
 		C86EDAC11AD85A320075C00C /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86EDAC01AD85A320075C00C /* RecipeViewController.swift */; };
 		C86EDAC31AD85EEE0075C00C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86EDAC21AD85EEE0075C00C /* Main.storyboard */; };
 		C86EDAC51AD869A70075C00C /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86EDAC41AD869A70075C00C /* MyTableViewCell.swift */; };
-		C86EDAC71AD86DDA0075C00C /* cheeseBread.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C86EDAC61AD86DDA0075C00C /* cheeseBread.jpg */; };
-		C86EDAC91AD86DEC0075C00C /* bread.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C86EDAC81AD86DEC0075C00C /* bread.jpeg */; };
 		C884A1151AD9C30B0025ED00 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884A1141AD9C30B0025ED00 /* FavoritesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,12 +47,12 @@
 		75F42A2A1AE1A29E005E3BAB /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		97DD94A61ACF296E00B68343 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		97DD94A81ACF30C000B68343 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		C813F0361AE856C700F5E23D /* red-heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-heart.png"; sourceTree = "<group>"; };
+		C813F03A1AE857C900F5E23D /* white-heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-heart.png"; sourceTree = "<group>"; };
 		C83664091ACF922F00822BB4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C86EDAC01AD85A320075C00C /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		C86EDAC21AD85EEE0075C00C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C86EDAC41AD869A70075C00C /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
-		C86EDAC61AD86DDA0075C00C /* cheeseBread.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cheeseBread.jpg; sourceTree = "<group>"; };
-		C86EDAC81AD86DEC0075C00C /* bread.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bread.jpeg; sourceTree = "<group>"; };
 		C884A1141AD9C30B0025ED00 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,16 +95,16 @@
 		75020CAC1ACDEE2600E0A6A2 /* iCuisine */ = {
 			isa = PBXGroup;
 			children = (
-				97DD94A81ACF30C000B68343 /* Results.swift */,
 				75F42A2A1AE1A29E005E3BAB /* SwiftyJSON.swift */,
+				97DD94A81ACF30C000B68343 /* Results.swift */,
 				97DD94A61ACF296E00B68343 /* Recipe.swift */,
-				C86EDAC41AD869A70075C00C /* MyTableViewCell.swift */,
-				C86EDAC81AD86DEC0075C00C /* bread.jpeg */,
-				C86EDAC61AD86DDA0075C00C /* cheeseBread.jpg */,
 				C86EDAC21AD85EEE0075C00C /* Main.storyboard */,
+				C86EDAC41AD869A70075C00C /* MyTableViewCell.swift */,
 				75020CB11ACDEE2600E0A6A2 /* ViewController.swift */,
 				C884A1141AD9C30B0025ED00 /* FavoritesViewController.swift */,
 				C86EDAC01AD85A320075C00C /* RecipeViewController.swift */,
+				C813F03A1AE857C900F5E23D /* white-heart.png */,
+				C813F0361AE856C700F5E23D /* red-heart.png */,
 				C83664091ACF922F00822BB4 /* SearchViewController.swift */,
 				75020CAF1ACDEE2600E0A6A2 /* AppDelegate.swift */,
 				75020CB61ACDEE2600E0A6A2 /* Images.xcassets */,
@@ -219,11 +219,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C813F0381AE856C700F5E23D /* red-heart.png in Resources */,
 				C86EDAC31AD85EEE0075C00C /* Main.storyboard in Resources */,
-				C86EDAC91AD86DEC0075C00C /* bread.jpeg in Resources */,
-				C86EDAC71AD86DDA0075C00C /* cheeseBread.jpg in Resources */,
 				75020CBA1ACDEE2700E0A6A2 /* LaunchScreen.xib in Resources */,
 				75020CB71ACDEE2600E0A6A2 /* Images.xcassets in Resources */,
+				C813F03B1AE857C900F5E23D /* white-heart.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

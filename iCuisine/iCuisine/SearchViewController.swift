@@ -9,19 +9,22 @@
 import Foundation
 import UIKit
 
-//class Static {
-//    struct Favorites {
-//        static var favoritesArray = [Recipe]()
-//    }
-//}
 
 class SearchViewController: UIViewController {
     
-//    var favoriteRecipes: [Recipe] = []
     @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let favoritesDefaults = NSUserDefaults.standardUserDefaults()
+        
+        if let data = favoritesDefaults.objectForKey("recipe") as? NSData {
+            let unarc = NSKeyedUnarchiver(forReadingWithData: data)
+            let newR = unarc.decodeObjectForKey("root") as! [Recipe]
+            
+            Static.Favorites.favoritesArray = newR
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }    
     override func didReceiveMemoryWarning() {
@@ -32,11 +35,10 @@ class SearchViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "results" {
             
-            var venueViewController =  segue.destinationViewController as Results
-            
+            var venueViewController =  segue.destinationViewController as! Results
             var urlString: String = "http://api.pearson.com:80/kitchen-manager/v1/recipes?ingredients-all="
-            
             var userInput = textField.text
+            
             userInput = userInput.stringByReplacingOccurrencesOfString(" ", withString: "%20", options: NSStringCompareOptions.LiteralSearch, range: nil)
             var userInputArr = userInput.componentsSeparatedByString(",")
             
@@ -49,24 +51,11 @@ class SearchViewController: UIViewController {
             
             urlString += "&limit=300"
             
-            // DAR SPLIT EM COMMAS E ADD NO urlString
-            
             println(urlString)
             
             venueViewController.urlPath = urlString
         }
-        
-        if segue.identifier == "favorites" {
-            var favorites: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-            var venueViewController = segue.destinationViewController as FavoritesViewController
-            var venue: [Recipe] = []
-            if let recipe = favorites.objectForKey("favorites") as? Recipe {
-                venue.append(recipe)
-            }
-            venueViewController.recipes = venue
-//            venueViewController.favoriteRecipes = favoriteRecipes
-//            venueViewController.favoriteRecipes = Static.Favorites.favoritesArray
-        }
+
     }
     
 }
