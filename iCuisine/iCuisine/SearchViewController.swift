@@ -32,20 +32,33 @@ class SearchViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "results" {
             
-            var venueViewController =  segue.destinationViewController as! Results
+            var venueViewController =  segue.destinationViewController as Results
             
-            let urlString = "http://api.pearson.com:80/kitchen-manager/v1/recipes?ingredients-all="
+            var urlString: String = "http://api.pearson.com:80/kitchen-manager/v1/recipes?ingredients-all="
             
             var userInput = textField.text
+            userInput = userInput.stringByReplacingOccurrencesOfString(" ", withString: "%20", options: NSStringCompareOptions.LiteralSearch, range: nil)
+            var userInputArr = userInput.componentsSeparatedByString(",")
+            
+            println(userInputArr)
+
+            for s in userInputArr {
+                urlString += s
+                urlString += "%2C"
+            }
+            
+            urlString += "&limit=300"
             
             // DAR SPLIT EM COMMAS E ADD NO urlString
+            
+            println(urlString)
             
             venueViewController.urlPath = urlString
         }
         
         if segue.identifier == "favorites" {
             var favorites: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-            var venueViewController = segue.destinationViewController as! FavoritesViewController
+            var venueViewController = segue.destinationViewController as FavoritesViewController
             var venue: [Recipe] = []
             if let recipe = favorites.objectForKey("favorites") as? Recipe {
                 venue.append(recipe)

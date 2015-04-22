@@ -14,8 +14,6 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
     
-    var favoriteRecipes: [Recipe] = []
-    
     var recipe: Recipe!
     
     @IBOutlet weak var addFav: UIButton!
@@ -23,8 +21,6 @@ class MyTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     
     let favorites = NSUserDefaults.standardUserDefaults()
-    
-    var isFav: Bool = false;
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,15 +33,34 @@ class MyTableViewCell: UITableViewCell {
     @IBAction func saveFavorites(sender: AnyObject) {
         
         if !recipe.isFav {
-        
+            println("INSERINDO FAV")
             let favoritesDefaults = NSUserDefaults.standardUserDefaults()
-        
+            recipe.isFav = true
+            addFav.setBackgroundImage(UIImage(named: "Red-heart.png"), forState: .Normal)
+            
             Static.Favorites.favoritesArray.append(recipe)
         
             favoritesDefaults.setObject(NSKeyedArchiver.archivedDataWithRootObject(Static.Favorites.favoritesArray), forKey: "recipe")
-            
-            recipe.isFav = true
         }
+        else {
+            println("TIRANDO FAV")
+            let favoritesDefaults = NSUserDefaults.standardUserDefaults()
+            recipe.isFav = false
+            addFav.setBackgroundImage(UIImage(named: "white-heart.jpeg"), forState: .Normal)
+            
+            Static.Favorites.favoritesArray.removeAtIndex(findIndexOfRecipe(self.recipe))
+            
+            favoritesDefaults.setObject(NSKeyedArchiver.archivedDataWithRootObject(Static.Favorites.favoritesArray), forKey: "recipe")
+        }
+    }
+    
+    func findIndexOfRecipe(recipeToBeFound: Recipe) -> Int {
+        for index in 0..<Static.Favorites.favoritesArray.count {
+            if ( recipeToBeFound.equals(Static.Favorites.favoritesArray[index]) ) {
+                return index
+            }
+        }
+        return -1
     }
     
 }

@@ -67,4 +67,13 @@ class Recipe : NSObject, NSCoding{
         }
     }
     
+    func equals(r: Recipe) -> Bool{
+        if (r.name == self.name) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    
 }

@@ -21,7 +21,7 @@ class FavoritesViewController: UITableViewController {
         
         if let data = favoritesDefaults.objectForKey("recipe") as? NSData {
             let unarc = NSKeyedUnarchiver(forReadingWithData: data)
-            let newR = unarc.decodeObjectForKey("root") as! [Recipe]
+            let newR = unarc.decodeObjectForKey("root") as [Recipe]
             
             recipes = newR
         }
@@ -46,17 +46,23 @@ class FavoritesViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("favoritesCell") as! MyTableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("favoritesCell") as MyTableViewCell
         cell.nameLabel.text = recipes[indexPath.row].name
-//        cell.favoriteRecipes = favoriteRecipes
         cell.recipe = recipes[indexPath.row]
         
+        if cell.recipe.isFav == true {
+            cell.addFav.setBackgroundImage(UIImage(named: "Red-heart.png"), forState: .Normal)
+        }
+        else {
+            cell.addFav.setBackgroundImage(UIImage(named: "white-heart.jpeg"), forState: .Normal)
+        }
+
         return cell;
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showRecipe" {
-            var venueViewController = segue.destinationViewController as! RecipeViewController
+            var venueViewController = segue.destinationViewController as RecipeViewController
             var index = self.tableView.indexPathForSelectedRow()!
             var venue = self.recipes[index.row]
             venueViewController.recipe = venue
