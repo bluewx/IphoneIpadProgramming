@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nnc-Q6-SKu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nnc-Q6-SKu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -197,22 +197,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fa-bl-MbF">
-                                <rect key="frame" x="144" y="203" width="313" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="313" id="CZt-4M-Jwt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Ingredients:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flr-QD-Nrp">
-                                <rect key="frame" x="231" y="132" width="138" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ingredients:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flr-QD-Nrp">
+                                <rect key="frame" x="255" y="171" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXw-v3-RcW">
-                                <rect key="frame" x="277" y="283" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXw-v3-RcW">
+                                <rect key="frame" x="210" y="283" width="70" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -220,30 +213,37 @@
                                     <segue destination="bsE-n8-krB" kind="show" identifier="results" id="gSp-MU-MAE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1e-PT-hLQ">
-                                <rect key="frame" x="248" y="363" width="105" height="30"/>
-                                <state key="normal" title="Open Favorites">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1e-PT-hLQ">
+                                <rect key="frame" x="303" y="283" width="105" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Favorites">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="e2A-5f-k1u" kind="show" identifier="favorites" id="O3c-ek-6ZC"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fa-bl-MbF">
+                                <rect key="frame" x="145" y="222" width="310" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="L2F-Mg-mBd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="g1e-PT-hLQ" firstAttribute="top" secondItem="mXw-v3-RcW" secondAttribute="bottom" constant="50" id="01U-8G-wxl"/>
-                            <constraint firstAttribute="centerX" secondItem="2fa-bl-MbF" secondAttribute="centerX" id="3kk-WB-eHR"/>
-                            <constraint firstItem="PMl-U4-ALh" firstAttribute="top" secondItem="g1e-PT-hLQ" secondAttribute="bottom" constant="207" id="DNB-qs-sNX"/>
-                            <constraint firstItem="2fa-bl-MbF" firstAttribute="top" secondItem="Flr-QD-Nrp" secondAttribute="bottom" constant="50" id="KDZ-zi-qUH"/>
-                            <constraint firstAttribute="centerX" secondItem="Flr-QD-Nrp" secondAttribute="centerX" id="Np6-0g-kTF"/>
-                            <constraint firstItem="mXw-v3-RcW" firstAttribute="top" secondItem="2fa-bl-MbF" secondAttribute="bottom" constant="50" id="SHf-fm-ccF"/>
-                            <constraint firstAttribute="centerX" secondItem="mXw-v3-RcW" secondAttribute="centerX" constant="-1" id="dfx-df-kYh"/>
-                            <constraint firstAttribute="centerX" secondItem="g1e-PT-hLQ" secondAttribute="centerX" id="udv-vu-a7B"/>
+                            <constraint firstAttribute="centerX" secondItem="2fa-bl-MbF" secondAttribute="centerX" id="4ap-hS-ebj"/>
+                            <constraint firstAttribute="centerX" secondItem="Flr-QD-Nrp" secondAttribute="centerX" id="CzJ-2I-pHZ"/>
+                            <constraint firstAttribute="centerX" secondItem="g1e-PT-hLQ" secondAttribute="centerX" constant="-55.5" id="E8D-xo-M0s"/>
+                            <constraint firstAttribute="centerX" secondItem="mXw-v3-RcW" secondAttribute="centerX" constant="55" id="Rle-hd-wSr"/>
+                            <constraint firstItem="2fa-bl-MbF" firstAttribute="top" secondItem="Flr-QD-Nrp" secondAttribute="bottom" constant="30" id="huR-sQ-ajf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="iCuisine" id="xsj-h6-VmS"/>
                     <connections>
+                        <outlet property="button" destination="mXw-v3-RcW" id="YTY-y8-47p"/>
                         <outlet property="searchDisplayController" destination="VhC-N6-HX0" id="poD-rE-flU"/>
                         <outlet property="textField" destination="2fa-bl-MbF" id="CB4-LV-lKj"/>
                     </connections>
