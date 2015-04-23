@@ -33,7 +33,6 @@ class MyTableViewCell: UITableViewCell {
     @IBAction func saveFavorites(sender: AnyObject) {
         
         if !recipe.isFav {
-            println("INSERINDO FAV")
             let favoritesDefaults = NSUserDefaults.standardUserDefaults()
             recipe.isFav = true
             addFav.setBackgroundImage(UIImage(named: "red-heart.png"), forState: .Normal)
@@ -42,7 +41,6 @@ class MyTableViewCell: UITableViewCell {
         
             favoritesDefaults.setObject(NSKeyedArchiver.archivedDataWithRootObject(Static.Favorites.favoritesArray), forKey: "recipe")
         } else {
-            println("TIRANDO FAV")
             let favoritesDefaults = NSUserDefaults.standardUserDefaults()
             recipe.isFav = false
             addFav.setBackgroundImage(UIImage(named: "white-heart.png"), forState: .Normal)
