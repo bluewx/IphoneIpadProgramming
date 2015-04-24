@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nnc-Q6-SKu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nnc-Q6-SKu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Recipes-->
@@ -118,43 +117,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="29i-sU-OAT">
-                                <rect key="frame" x="200" y="64" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="d2v-Oe-f7i"/>
-                                </constraints>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="29i-sU-OAT">
+                                <rect key="frame" x="127" y="105" width="150" height="150"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ingredients:" translatesAutoresizingMaskIntoConstraints="NO" id="zAq-GQ-q8C">
-                                <rect key="frame" x="51" y="272" width="508" height="145"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAq-GQ-q8C">
+                                <rect key="frame" x="316" y="95" width="160" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="145" id="3an-OP-AxV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3W4-Mc-gB4">
+                                <rect key="frame" x="118" y="320" width="362" height="272"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3W4-Mc-gB4">
-                                <rect key="frame" x="51" y="425" width="508" height="145"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wY-8I-558">
+                                <rect key="frame" x="217" y="287" width="165" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="145" id="cwD-Nw-DtO"/>
+                                    <constraint firstAttribute="width" constant="165" id="Vo8-eY-EfN"/>
+                                    <constraint firstAttribute="height" constant="25" id="uvy-di-00J"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ingredients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zo6-J8-tfg">
+                                <rect key="frame" x="316" y="72" width="160" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="L7G-U1-P1H" firstAttribute="top" secondItem="3W4-Mc-gB4" secondAttribute="bottom" constant="30" id="BSw-ss-YMq"/>
-                            <constraint firstItem="29i-sU-OAT" firstAttribute="centerX" secondItem="yH5-6w-lb5" secondAttribute="centerX" id="CKM-TI-Wsh"/>
-                            <constraint firstItem="3W4-Mc-gB4" firstAttribute="top" secondItem="zAq-GQ-q8C" secondAttribute="bottom" constant="8" symbolic="YES" id="JSt-PF-xyh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3W4-Mc-gB4" secondAttribute="trailing" constant="24" id="XQ7-OT-Wyv"/>
-                            <constraint firstItem="29i-sU-OAT" firstAttribute="top" secondItem="3Zw-4k-6pl" secondAttribute="bottom" id="dyD-fg-3em"/>
-                            <constraint firstItem="3W4-Mc-gB4" firstAttribute="leading" secondItem="yH5-6w-lb5" secondAttribute="leadingMargin" constant="36" id="jOB-yX-xRa"/>
-                            <constraint firstItem="zAq-GQ-q8C" firstAttribute="leading" secondItem="yH5-6w-lb5" secondAttribute="leadingMargin" constant="35" id="oC1-2c-lIG"/>
-                            <constraint firstItem="zAq-GQ-q8C" firstAttribute="top" secondItem="29i-sU-OAT" secondAttribute="bottom" constant="8" symbolic="YES" id="r63-XU-qbF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zAq-GQ-q8C" secondAttribute="trailing" constant="25" id="yWW-Gb-EI7"/>
+                            <constraint firstItem="2wY-8I-558" firstAttribute="centerX" secondItem="29i-sU-OAT" secondAttribute="centerX" constant="97.5" id="5gn-gD-eaA"/>
+                            <constraint firstItem="2wY-8I-558" firstAttribute="centerY" secondItem="29i-sU-OAT" secondAttribute="centerY" constant="119.5" id="AV0-tq-t4a"/>
+                            <constraint firstItem="2wY-8I-558" firstAttribute="centerX" secondItem="zo6-J8-tfg" secondAttribute="centerX" constant="-96.5" id="DVh-Op-wpe"/>
+                            <constraint firstItem="2wY-8I-558" firstAttribute="centerX" secondItem="3W4-Mc-gB4" secondAttribute="centerX" id="EVD-OZ-7R3"/>
+                            <constraint firstAttribute="centerY" secondItem="2wY-8I-558" secondAttribute="centerY" id="Kx1-N5-UPc"/>
+                            <constraint firstItem="2wY-8I-558" firstAttribute="centerY" secondItem="3W4-Mc-gB4" secondAttribute="centerY" constant="-156.5" id="nkI-bw-Vlt"/>
+                            <constraint firstAttribute="centerX" secondItem="2wY-8I-558" secondAttribute="centerX" id="t5J-uS-8Ad"/>
+                            <constraint firstItem="2wY-8I-558" firstAttribute="centerX" secondItem="zAq-GQ-q8C" secondAttribute="centerX" constant="-96.5" id="tty-m3-CxP"/>
+                            <constraint firstItem="2wY-8I-558" firstAttribute="centerY" secondItem="zAq-GQ-q8C" secondAttribute="centerY" constant="124.5" id="zAX-YR-lNq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Recipe's name" id="pcf-a4-yQ7"/>
@@ -243,7 +249,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="iCuisine" id="xsj-h6-VmS"/>
                     <connections>
-                        <outlet property="button" destination="mXw-v3-RcW" id="YTY-y8-47p"/>
                         <outlet property="searchDisplayController" destination="VhC-N6-HX0" id="poD-rE-flU"/>
                         <outlet property="textField" destination="2fa-bl-MbF" id="CB4-LV-lKj"/>
                     </connections>
@@ -262,7 +267,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="red-heart.png" width="886" height="589"/>
+        <image name="red-heart.png" width="64" height="64"/>
         <image name="white-heart.png" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>

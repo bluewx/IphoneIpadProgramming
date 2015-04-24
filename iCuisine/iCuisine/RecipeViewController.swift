@@ -25,9 +25,9 @@ class RecipeViewController: UIViewController {
             recipeImage.image = UIImage(named: recipe.image)
             recipeDescription.text = recipe.recipeDescription
             println(recipe.image)
-            var ing: String = "Ingredients: \n\n"
+            var ing: String = ""
             for s in recipe.ingredients {
-                ing += "\t" + s + "\n"
+                ing += s + "\n"
             }
             recipeIngredients.text = ing
             
